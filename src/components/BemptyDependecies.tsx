@@ -1,9 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 
 const EjemploDependenciasVacias = () => {
+
+    const[counter, setCounter]=useState<number>(0)
   useEffect(() => {
-    console.log('El componente se ha montado.');
+    console.log('This is the component with empty dependecies');
 
     // No hay función de limpieza necesaria.
   }, []); // Array vacío de dependencias
@@ -11,6 +14,8 @@ const EjemploDependenciasVacias = () => {
   return (
     <div>
       <h1>Empty dependecies example</h1>
+      <p>The counter is: {counter}</p>
+      <button onClick={()=>setCounter(counter + 1)}>+</button>
     </div>
   );
 };

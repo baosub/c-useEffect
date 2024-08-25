@@ -1,6 +1,7 @@
 
 import EjemploSimple from './components/AsimpleExample'
 import EjemploDependenciasVacias from './components/BemptyDependecies'
+import EjemploConDependencias from './components/CspecificDependecies'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
 
       <EjemploSimple/>
       <EjemploDependenciasVacias/>
+      <EjemploConDependencias/>
     </div>
   )
 }
