@@ -2,6 +2,7 @@
 import EjemploSimple from './components/AsimpleExample'
 import EjemploDependenciasVacias from './components/BemptyDependecies'
 import EjemploConDependencias from './components/CspecificDependecies'
+import EjemploConLimpieza from './components/DcleaningFunction'
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <EjemploSimple/>
       <EjemploDependenciasVacias/>
       <EjemploConDependencias/>
+      <EjemploConLimpieza/>
+      
     </div>
   )
 }
